@@ -1,6 +1,7 @@
 /* Reset estilos */
 body {
   margin: 0px;
+  overflow-x: hidden;
 }
 
 h1,
@@ -401,5 +402,115 @@ img {
   .marca {
     width: 160px;
     height: 150px;
+  }
+}
+
+/* estilos - história */
+/* Fundo da seção */
+.bg-historia {
+  position: relative;
+  background: #fff; /* Fundo branco */
+  color: #333; /* Texto em cinza escuro para contraste */
+  padding: 100px 20px;
+}
+
+/* Wrapper para alinhar os elementos */
+.historia-wrapper {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Grid principal */
+.grid-historia {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  align-items: center;
+}
+
+/* Estilização da imagem */
+.container-img {
+  position: relative;
+}
+
+.image-overlay {
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden; /* Para manter a imagem dentro do círculo */
+  box-shadow: inset -10px -10px 30px rgba(255, 255, 255, 0.1),
+    inset 10px 10px 30px rgba(0, 0, 0, 0.5), 0px 15px 40px rgba(0, 0, 0, 0.3); /* Efeitos de luz e sombra */
+}
+
+.image-overlay img {
+  width: 100%;
+  height: auto;
+}
+
+/* Título estilizado */
+.titulo-historia {
+  font-family: "Arial", sans-serif; /* Fonte sans-serif */
+  font-size: 3.5rem;
+  line-height: 1.2;
+  color: #333; /* Cor cinza escuro */
+  position: relative; /* Necessário para a barra decorativa */
+}
+
+.titulo-historia::after {
+  content: ""; /* Elemento decorativo abaixo do título */
+  display: block;
+  width: 100px; /* Comprimento da barra decorativa */
+  height: 4px; /* Espessura da barra decorativa */
+  background-color: #333; /* Cor da barra decorativa (cinza escuro) */
+  margin-top: 10px; /* Espaçamento entre o título e a barra */
+}
+
+/* Texto do parágrafo */
+.texto-historia {
+  font-family: "Arial", sans-serif; /* Fonte sans-serif */
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+/* Assinatura estilizada */
+.assinatura-historia {
+  font-family: "Georgia", serif; /* Fonte serif diferente para a assinatura */
+  font-style: italic;
+  font-size: 1.1rem; /* Tamanho da fonte da assinatura */
+  margin-top: 20px; /* Espaçamento acima da assinatura */
+}
+
+/* Elementos decorativos flutuantes */
+.floating-circle-large,
+.floating-circle-small {
+  position: absolute;
+}
+
+.floating-circle-large {
+  width: 300px;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  top: -150 px;
+}
+
+.floating-circle-small {
+  width: 150 px;
+  height: 150 px;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  bottom: -75 px;
+  right: -75 px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .grid-historia {
+    grid-template-columns: 1fr; /* Empilha colunas em telas menores */
+    gap: 30px;
+  }
+
+  .titulo-historia {
+    font-size: 2.5rem; /* Cabeçalho menor em telas menores */
   }
 }
