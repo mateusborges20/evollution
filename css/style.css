@@ -474,8 +474,8 @@ img {
 
 /* Assinatura estilizada */
 .assinatura-historia {
-  font-family: "Georgia", serif; /* Fonte serif diferente para a assinatura */
-  font-style: italic;
+  font-family: "Poppins", serif; /* Fonte serif diferente para a assinatura */
+  font-style: normal;
   font-size: 1.1rem; /* Tamanho da fonte da assinatura */
   margin-top: 20px; /* Espaçamento acima da assinatura */
 }
