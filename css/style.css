@@ -474,10 +474,11 @@ img {
 
 /* Assinatura estilizada */
 .assinatura-historia {
-  font-family: "Poppins", serif; /* Fonte serif diferente para a assinatura */
+  font-family: "Arial", serif; /* Fonte serif diferente para a assinatura */
   font-style: normal;
   font-size: 1.1rem; /* Tamanho da fonte da assinatura */
   margin-top: 20px; /* Espaçamento acima da assinatura */
+  line-height: 1.5;
 }
 
 /* Elementos decorativos flutuantes */
